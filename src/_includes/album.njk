@@ -1,0 +1,32 @@
+<body class="vh-100">
+  <div
+    class="position-fixed fixed-top fixed-bottom bg-dark z-index-n1 bg-blur"
+    style="
+      background-image: url('/assets/images/{{ album.artwork }}');
+      background-size: cover;
+      background-position: center;
+      filter: blur(20px) brightness(0.6) saturate(1.25);
+    "
+  >
+  </div>
+
+  <div class="vh-100 d-flex flex-column">
+    {% include "navbar.njk" %}
+
+    <section class="text-white flex-grow-1">
+      <div class="pt-3 pt-sm-5 pb-sm-5">
+        <h1 class="text-center">{{ album.title }}</h1>
+
+        <div class="d-flex pt-3 pt-sm-5 pb-sm-4">
+          <img class="img-fluid mx-auto mw-100 rounded-sm" style="width: 600px;" src="/assets/images/{{ album.artwork }}" alt="{{ album.title }}">
+        </div>
+      </div>
+
+      <div class="bg-translucent-dark pb-5">
+        <div class="container-sm pt-4 pb-5">
+          {% reactSsr "Playlist", album, true %}
+        </div>
+      </div>
+    </section>
+  </div>
+</body>

@@ -1,0 +1,31 @@
+{
+  "name": "playlist",
+  "version": "1.0.0",
+  "description": "A static site for streaming select music",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcordova47/playlist.git"
+  },
+  "author": "Marc Cordova",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcordova47/playlist/issues"
+  },
+  "homepage": "https://github.com/mcordova47/playlist#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/register": "^7.25.9",
+    "esbuild": "^0.25.0",
+    "netlify-cli": "^19.0.0"
+  }
+}

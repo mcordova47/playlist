@@ -1,0 +1,9 @@
+[build]
+  publish = "_site"
+  command = "npm run build"
+
+[dev]
+  frameworkPort = 8888
+
+[build.environment]
+  NODE_VERSION = "23.8.0"

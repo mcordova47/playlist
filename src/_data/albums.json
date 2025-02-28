@@ -1,0 +1,65 @@
+[
+  {
+    "artwork": "albums/foo.png",
+    "slug": "foo",
+    "songs": [
+      {
+        "files": [
+          "foo/foo.mp3"
+        ],
+        "title": "Foo"
+      },
+      {
+        "files": [
+          "foo/bar.mp3"
+        ],
+        "title": "Bar"
+      },
+      {
+        "files": [
+          "foo/baz.mp3"
+        ],
+        "title": "Baz"
+      }
+    ],
+    "title": "Foo"
+  },
+  {
+    "artwork": "albums/lorem-ipsum.png",
+    "slug": "lorem-ipsum",
+    "songs": [
+      {
+        "files": [
+          "lorem-ipsum/lorem.mp3"
+        ],
+        "title": "Lorem"
+      },
+      {
+        "files": [
+          "lorem-ipsum/ipsum.mp3"
+        ],
+        "title": "Ipsum"
+      }
+    ],
+    "title": "Lorem Ipsum"
+  },
+  {
+    "artwork": "albums/bleep-bloop.png",
+    "slug": "bleep-bloop",
+    "songs": [
+      {
+        "files": [
+          "bleep-bloop/bleep.mp3"
+        ],
+        "title": "Bleep"
+      },
+      {
+        "files": [
+          "bleep-bloop/bloop.mp3"
+        ],
+        "title": "Bloop"
+      }
+    ],
+    "title": "Bleep Bloop"
+  }
+]

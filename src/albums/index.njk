@@ -1,0 +1,40 @@
+---
+layout: layout.njk
+title: albums
+---
+
+<body class="vh-100 text-white">
+  <div
+    class="position-fixed fixed-top fixed-bottom w-100 bg-darkest-blue bg-repeat z-index-n1"
+    style="
+      background-image: url('/assets/images/backgrounds/albums.jpg');
+      background-size: auto;
+      background-repeat: repeat;
+      filter: brightness(0.15) blur(3px);
+    "
+  >
+  </div>
+
+  {% include "navbar.njk" %}
+
+  <section>
+    <div class="container py-4">
+      <div class="d-flex justify-content-center">
+        <h1 class="text-center px-3 py-2">albums</h1>
+      </div>
+
+      <div class="row align-items-end mt-5">
+        {% for album in albums %}
+          <div class="col-12 col-md-6 col-lg-4 pb-5">
+            <h4 class="d-inline-block px-3 py-2">
+              <a class="text-white" href="/s/albums/{{ album.slug }}">{{ album.title }}</a>
+            </h4>
+            <a href="/s/albums/{{ album.slug }}">
+              <img class="img-fluid rounded" src="/assets/images/{{ album.artwork }}" alt="{{ album.title }}">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</body>

@@ -1,0 +1,97 @@
+.sans-serif, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poiret One', sans-serif;
+}
+
+.serif, body {
+  font-family: 'Josefin Slab', serif;
+}
+
+.font-georgia {
+  font-family: 'Georgia', serif;
+}
+
+.spaced, h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.5em;
+}
+
+.bg-translucent-dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-translucent-darker {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-sm {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blur-4 {
+  filter: blur(4px);
+}
+
+.text-main {
+  color: #104A84;
+}
+
+.text-inherit {
+  color: inherit !important;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.z-index-n1 {
+  z-index: -1;
+}
+
+.bg-blur {
+  filter: blur(20px);
+  margin-top: -40px;
+  margin-left: -40px;
+  margin-bottom: -40px;
+  margin-right: -40px;
+}
+
+.bg-blur-sm {
+  filter: blur(1px);
+  margin-top: -2px;
+  margin-left: -2px;
+  margin-bottom: -2px;
+  margin-right: -2px;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-repeat {
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.bg-darkest-blue {
+  background-color: #09091c;
+}
+
+@media (min-width: 576px) {
+  .rounded-sm {
+    border-radius: var(--bs-border-radius) !important;
+  }
+}
+
+.hover\:translucent:hover {
+  opacity: 0.75;
+}
+
+.bg-translucent-light, .hover\:bg-translucent-light:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.text-very-muted, .hover\:text-very-muted:hover {
+  color: rgb(180, 180, 180) !important;
+}
