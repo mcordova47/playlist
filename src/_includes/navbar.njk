@@ -1,22 +1,36 @@
-<div class="bg-translucent-dark px-4 py-2">
-  <h2 class="d-inline-block me-3">
-    <a href="/" class="text-white text-decoration-none">playlist</a>
-  </h2>
+<div class="bg-translucent-dark px-4 py-2 d-flex justify-content-between align-items-center">
+  <div>
+    <h2 class="d-inline-block me-3">
+      <a href="/" class="text-white text-decoration-none">playlist</a>
+    </h2>
 
-  {% if links %}
-    {% for link in links %}
-      <h6 class="d-inline-block">
-        <a
-          href="/{{ link.path }}"
-          class="text-white text-decoration-none hover:text-muted"
-          aria-label="{{ link.path }}"
-        >
-          <span class="d-inline d-sm-none">
-            /<span class="bi bi-{{ link.icon }}"></span>
-          </span>
-          <span class="d-none d-sm-inline">/{{ link.path }}</span>
-        </a>
-      </h6>
-    {% endfor %}
-  {% endif %}
+    {% if links %}
+      {% for link in links %}
+        <h6 class="d-inline-block">
+          <a
+            href="/{{ link.path }}"
+            class="text-white text-decoration-none hover:text-muted"
+            aria-label="{{ link.path }}"
+          >
+            <span class="d-inline d-sm-none">
+              /<span class="bi bi-{{ link.icon }}"></span>
+            </span>
+            <span class="d-none d-sm-inline">/{{ link.path }}</span>
+          </a>
+        </h6>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  <div>
+    <h4 class="d-inline-block mb-0">
+      <a
+        href="https://github.com/mcordova47/playlist"
+        alt="GitHub"
+        class="text-white text-decoration-none hover:text-muted"
+      >
+        <span class="bi bi-github"></span>
+      </a>
+    </h6>
+  </div>
 </div>

@@ -95,3 +95,7 @@
 .text-very-muted, .hover\:text-very-muted:hover {
   color: rgb(180, 180, 180) !important;
 }
+
+.hover\:text-muted:hover {
+  color: var(--bs-gray-500) !important;
+}
